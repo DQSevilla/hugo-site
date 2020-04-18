@@ -1,0 +1,56 @@
+baseurl = "https://www.davidqsevilla.com"
+title = "David Q Sevilla"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "david"
+
+[params]
+    author = "David Sevilla"
+    info = "Incoming Software Engineer Intern at Facebook"
+    description = "David Sevilla's personal website"
+    keywords = "blog,developer,personal,portfolio"
+    avatarurl = "images/avatar.jpg"
+
+    favicon_32 = "images/favicon.ico"
+    favicon_16 = "images/favicon.ico"
+
+#    footercontent = "contact@daviqsevilla.com"
+
+    hidecredits = false
+    hidecopyright = false
+
+    rtl = false
+
+    math = true
+    custom_css = ["css/custom.css"]
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/dqsevilla"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 2
+    url = "https://linkedin.com/in/david-sevilla"
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "Resume"
+    weight = 2
+    url = "/resume/"
