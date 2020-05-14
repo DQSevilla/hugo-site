@@ -9,3 +9,7 @@ categories = []
 externalLink = "https://devblog.lifeskillssoftware.tech/posts/cms-api-contribution/"
 series = []
 +++
+
+Article hosted on the LSS Developer Blog [here](https://devblog.lifeskillssoftware.tech/posts/cms-api-contribution/)
+
+> If you're reading this, something may be broken.

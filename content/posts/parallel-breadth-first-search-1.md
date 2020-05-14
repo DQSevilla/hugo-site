@@ -1,7 +1,7 @@
 +++ 
 draft = true
 date = 2020-04-27T01:49:51-04:00
-title = "Optimizing a Parallel Breadth First Search"
+title = "Optimizing a Parallel Breadth First Search (Test Post)"
 description = "Discoveries I made while trying to optimize a parallel BFS algorithm with CUDA"
 slug = "" 
 tags = ["CUDA", "C", "GPU"]
@@ -12,11 +12,6 @@ series = []
 
 Breadth-First search is a well-known graph traversal algorithm with psuedocode
 like so:
-
-```python
-for vertex in Vertices:
-    print("foo")
-```
 
 **Note there is apparently a featured image option**
 
@@ -30,6 +25,10 @@ main(void) {
 }
 ```
 
+---
+
+This is nice:
+--
 https://gohugo.io/content-management/shortcodes/
 
 Def need to read about shortcodes for sexier articles
@@ -42,6 +41,16 @@ NaiveBFS(int source, int *edges, int *dest, int *visited, int *frontier) {
     /* ... $G=(V,E)$ */
 }
 ```
+
+I love `tee(1)` so much.
+
+> I like block quotes
+> a lot
+
+> Do they work with LaTeX?
+> $G = (V, E)$
+>
+> Oh wow they do!
 
 $G = (V, E)$
 
@@ -56,3 +65,39 @@ $$
 \int_0^{20} x^2 dx\\
 x = 2
 $$
+
+{{< figure src="/media/foo.jpg" 
+    title="Foo Title"
+    caption="A **Caption** for [foo](https://www.google.com)"
+    attr="and Image attributed to **Ghandi** or something"
+    attrlink="https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+    alt="foo image alt"
+    link="https://www.google.com"
+    target="_blank"
+    rel="external"
+    class="sample-figure-class"
+    width="50%"
+    height="100%"
+>}}
+
+I can add classes to the custom css in the config.toml and use the "class"
+attribute for the above figure to further customize it if I want a nice unified
+theme for figures (like a border or whatever). Apparently this doesn't work
+with the public/custom.css I have though
+
+---
+
+[CMS Contribution Article]({{< ref "posts/lss-cms-api-contribution.ms" >}})
+
+relref is relative to this page, and ref is absolute. You can use "path#id" to
+go to header "id" in the target article.
+
+With shortcodes you can also import:
+- Tweets
+- Insta posts
+- Vimeo videos
+- Youyube videos
+
+---
+
+{{< gist dqsevilla b82b25503d50229108e615e66fda50ce "ec2-backup" >}}
