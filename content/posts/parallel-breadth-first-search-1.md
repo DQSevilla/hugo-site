@@ -25,6 +25,35 @@ main(void) {
 }
 ```
 
+```ocaml
+open Ll
+open Llutil
+open Datastructures
+
+(* control flow graphs ------------------------------------------------------ *)
+
+(* This representation of control-flow graphs is more suited for dataflow
+   analysis than the abstract syntax defined in Ll.fdecl
+
+   - a cfg has:
+         blocks - a map of labels to  Ll basic block, and
+         preds  - a set of labels containing the blocks predecessors
+         ret_ty - the Ll return type of the function
+         args   - a list of function parameters with their types
+
+   Representing cfgs as maps makes it simpler to look up information
+   about the nodes in the graph.                                              *)
+
+type cfg = {
+  blocks : Ll.block LblM.t;
+  preds  : LblS.t LblM.t;
+  ret_ty : Ll.ty;
+  args   : (Ll.uid * Ll.ty) list
+}
+
+let entry_lbl = "_entry"
+```
+
 ---
 
 This is nice:

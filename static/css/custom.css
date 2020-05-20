@@ -4,6 +4,19 @@ h1, h2, h3, h4, h5, h6, footer {
   font-family: 'Inconsolata', monospace;
 }
 
+code {
+  font-family: 'Inconsolata', monospace;
+}
+
 .post-meta {
   font-family: 'Inconsolata', monospace;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 125%;
+  }
+  code {
+    font-size: 90%;
+  }
 }
