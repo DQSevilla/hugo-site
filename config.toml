@@ -60,11 +60,11 @@ disqusShortname = "david"
 # Can add any FA icon here, and probably in the articles themselves
 
 # Menu links
-[[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "/posts/"
+# [[menu.main]]
+#   name = "Blog"
+#   weight = 1
+#   url  = "/posts/"
 [[menu.main]]
   name = "Resume"
-  weight = 2
+  weight = 1
   url = "/resume/"
